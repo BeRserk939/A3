@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+    margin-width: 0;
+}
+
+Body {
+	background-color: black;
+}
+
+.Box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.square {
+	height: 100px;
+	width: 100px;
+	border: 5px dotted crimson;
+	animation: rotate 1s ease infinite, borderChange 1s ease infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}  
+	50% {
+        transform: rotate(180deg);
+	}
+}
+
+@keyframes borderChange	{
+    0% {
+         border-radius: 0%;
+    }
+    25% {
+    	border-radius: 50%;
+    }
+    50% {
+    	border-radius: 0%;
+    }
+    75% {
+        border-radius: 75%;
+    }
+
+   100% {
+   	    border-radius: 0%;
+   }
+}
